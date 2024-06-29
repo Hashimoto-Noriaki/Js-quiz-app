@@ -10,7 +10,7 @@ const answers = [
 const correct = 'ゴムゴム';
 
 //index.htmlから取ってくる
-document.getElementById('js-question').textContent = 'Question';
+document.getElementById('js-question').textContent = quiz;
 // console.log(document.getElementById('js-question').textContent);
 // console.log(document.getElementById('js-question'));
 
