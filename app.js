@@ -10,7 +10,7 @@ const answers = [
 const correct = 'ゴムゴム';
 
 //index.htmlから取ってくる
-console.log(document.getElementById('js-question').textContent)
+console.log(document.getElementById('js-question').textContent);
 // console.log(document.getElementById('js-question'));
 
 //divがたくさんあるので、ふさわしくない
