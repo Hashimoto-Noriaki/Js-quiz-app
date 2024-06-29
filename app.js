@@ -8,3 +8,10 @@ const answers = [
     'ゴロゴロ'
 ];
 const correct = 'ゴムゴム';
+
+//index.htmlから取ってくる
+console.log(document.getElementById('js-question'));
+
+//divがたくさんあるので、ふさわしくない
+// document.getElementByTagName('div');
+// console.log(document.getElementByTagName('div'));
