@@ -16,12 +16,14 @@ document.getElementById('js-question').textContent = quiz;
 //$があることで、HTMLのオブジェクトが入っていると理解できる
 const $button = document.getElementsByTagName('button');
 
-$button[0].textContent = answers[0];
-$button[1].textContent = answers[1];
-$button[2].textContent = answers[2];
-$button[3].textContent = answers[3];
-$button[4].textContent = answers[4];
-$button[5].textContent = answers[5];
+//$buttonが何回も繰り返されていたので、リファクタリング
+let buttonIndex = 0;
+let buttonLength = $button.length;
+while(buttonIndex < buttonLength){
+    //命令
+    $button[buttonIndex].textContent = answers[buttonIndex];
+    buttonIndex++;
+}
 
 //ボタンをクリックしたら正誤判定が出る
 document.getElementsByTagName('button')[0].addEventListener('click',() => {
