@@ -31,3 +31,43 @@ document.getElementsByTagName('button')[0].addEventListener('click',() => {
         window.alert('不正解‼︎')
     }
 });
+
+document.getElementsByTagName('button')[1].addEventListener('click',() => {
+    if(correct === $button[1].textContent){
+        window.alert('正解‼︎')
+    } else {
+        window.alert('不正解‼︎')
+    }
+});
+
+document.getElementsByTagName('button')[2].addEventListener('click',() => {
+    if(correct === $button[2].textContent){
+        window.alert('正解‼︎')
+    } else {
+        window.alert('不正解‼︎')
+    }
+});
+
+document.getElementsByTagName('button')[3].addEventListener('click',() => {
+    if(correct === $button[3].textContent){
+        window.alert('正解‼︎')
+    } else {
+        window.alert('不正解‼︎')
+    }
+});
+
+document.getElementsByTagName('button')[4].addEventListener('click',() => {
+    if(correct === $button[4].textContent){
+        window.alert('正解‼︎')
+    } else {
+        window.alert('不正解‼︎')
+    }
+});
+
+document.getElementsByTagName('button')[5].addEventListener('click',() => {
+    if(correct === $button[5].textContent){
+        window.alert('正解‼︎')
+    } else {
+        window.alert('不正解‼︎')
+    }
+});
