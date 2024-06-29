@@ -11,6 +11,7 @@ const correct = 'ゴムゴム';
 
 //同じような処理が続いたので、変数、定数にまとめる  $があることで、HTMLのオブジェクトが入っていると理解できる
 const $button = document.getElementsByTagName('button');
+const buttonLength = $button.length;
 
 //定数の文字列をHTMLに反映　　index.htmlから取ってくる
 //関数で囲む
@@ -36,26 +37,10 @@ const clickHandler = (e) => {
 };
 
 //ボタンをクリックしたら正誤判定が出る　eはイベントオブジェクト　　イベントは色々な情報を持っている
-$button[0].addEventListener('click',(e) => {
-    clickHandler(e);
-});
-
-$button[1].addEventListener('click',(e) => {
-    clickHandler(e);
-});
-
-$button[2].addEventListener('click',(e) => {
-    clickHandler(e);
-});
-
-$button[3].addEventListener('click',(e) => {
-    clickHandler(e);
-});
-
-$button[4].addEventListener('click',(e) => {
-    clickHandler(e);
-});
-
-$button[5].addEventListener('click',(e) => {
-    clickHandler(e);
-});
+let handleIndex = 0;
+while(handleIndex < buttonLength){
+    $button[handleIndex].addEventListener('click',(e) => {
+        clickHandler(e);
+    });
+    handleIndex++;
+}
