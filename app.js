@@ -37,6 +37,7 @@ const quiz = [
 
 const quizLength = quiz.length;
 let quizIndex = 0;
+let score = 0;
 
 //同じような処理が続いたので、変数、定数にまとめる  $があることで、HTMLのオブジェクトが入っていると理解できる
 const $button = document.getElementsByTagName('button');
@@ -60,6 +61,7 @@ setupQuiz();//クイズの問題文や選択肢選択肢の書き換えをやっ
 const clickHandler = (e) => {
     if(quiz[quizIndex].correct === e.target.textContent){
         window.alert('正解‼︎');
+        score++;
     } else {
         window.alert('不正解‼︎');
     }
@@ -71,7 +73,7 @@ const clickHandler = (e) => {
         setupQuiz();
     } else {
         //問題数がなければここを実行
-        window.alert('終了');
+        window.alert('終了‼︎あなたの正解数は' + score + '/' + quizLength + 'です‼︎');
     }
 
 };
