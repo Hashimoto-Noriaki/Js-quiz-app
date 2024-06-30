@@ -1,13 +1,42 @@
-const quiz = 'ルフィの悪魔の実は?';
-const answers = [
-    'ゴムゴム',
-    'バラバラ',
-    'メラメラ',
-    'ピカピカ',
-    'ハナハナ',
-    'ゴロゴロ'
+const question = [
+    {
+        quiz: 'ルフィの悪魔の実は?',
+        answers: [
+            'ゴムゴム',
+            'バラバラ',
+            'メラメラ',
+            'ピカピカ',
+            'ハナハナ',
+            'ゴロゴロ'
+        ],
+        correct: 'ゴムゴム'
+    },{ 
+        question: '桜木花道の出身中学は?',
+        answers: [
+            '北村中',
+            '和光中',
+            '武石中',
+            '富ケ丘中',
+            '大岡中',
+            '竹中中'
+        ],
+        correct:'和光中'
+    },{
+        question: '1998年に64で発売されたゼルダの伝説のゲームのタイトル名は?',
+        answers: [
+            'ムジュラの仮面',
+            'トワイライトプリンセス',
+            '時のオカリナ',
+            '風のタクト',
+            'スカイウォードソード',
+            '神々のトライフォース'
+        ],
+        correct:'時のオカリナ'
+    }
 ];
-const correct = 'ゴムゴム';
+
+const quizLength = quiz.length;
+let quizindex = 0;
 
 //同じような処理が続いたので、変数、定数にまとめる  $があることで、HTMLのオブジェクトが入っていると理解できる
 const $button = document.getElementsByTagName('button');
